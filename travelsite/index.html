@@ -8,9 +8,11 @@
 </head>
 
 <body>
+<main>
+
 
 <header>
-  <h3>tours and excursions around the globe.</h3>
+
 </header>
 
 <div class="top-nav">
@@ -50,25 +52,42 @@
   </div>
   </div>
 
+
 <div class="slideshow-container">
 
-  <!-- Full-width images with number and caption text -->
-  <div class="image-slideshow">
-    <img src="img/iceland.jpg" style="width:100%">
-    <div class="text">Caption Text</div>
-  </div>
 
-  <div class="image-slideshow">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
     <img src="img/bus.jpg" style="width:100%">
-    <div class="text">Caption Two</div>
+    <div class="text">Go on a bus tour is a way to combine exploring and convenience while traveling. Bus tours are available on all our travel locations.</div>
   </div>
 
-  <div class="image-slideshow">
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img/iceland.jpg" style="width:100%">
+    <div class="text">Do you want to hike in the high mountains and sleep under the stars on a barren field that bears the history of the vikings? Book a trip to Iceland.</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
     <img src="img/mountain.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
+    <div class="text">Japan is a country of diversity and has something for everyone. A rich culture, wonderful cherry trees, ancient temples and mountain climbing (on an active volcano!)</div>
   </div>
 
 
+  <a class="prev" onclick="plusSlides(-1)">◄</a>
+  <a class="next" onclick="plusSlides(1)">►</a>
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<div class="footer">
 <footer>
   <div class="information">Looking for inspiration?</div>
 
@@ -84,8 +103,10 @@
     </a></li>
 </ol>
 
-</footer>
+</footer></div>
 
+
+</main>
 <script src="script/slideshow.js"></script>
 
 </body>
