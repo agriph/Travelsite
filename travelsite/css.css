@@ -1,0 +1,99 @@
+﻿@font-face {
+	font-family: header-font;
+	src: url(header-font.woff);
+}
+@font-face {
+	font-family: my-font;
+	src: url(my-font.woff);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #Ffffff;
+  min-height: 100%;
+}
+
+#wrapper {
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+}
+
+.navbar-default { 
+margin : 0 !important; 
+}
+
+.navbar-header {
+	float: initial;
+}
+
+.navbar-brand {
+	color: #ffffff !important;
+}
+
+.banner  {
+margin-top: 0px;
+padding-top: 0px;
+margin-left:-20px;
+	
+}
+
+.dropdown-toggle {
+  background-color: #Ffd056;
+  	color: #ffffff !important;
+}
+
+ul.nav li a, ul.nav li a:visited {
+	color: #ffffff;
+}
+
+ul.dropdown-menu li a {
+	color: #000000 !important;
+}
+
+.dropdown-menu {
+	background: #Ffd056;
+}
+
+
+
+.caption-text {
+	  background-color: #00000080;
+}
+
+h4 {
+	margin-left: 15px;
+  font-family: my-font, Arial;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+h3 {
+  font-family: my-font;
+  	font-size: 25px;
+	font-weight: bold;
+}
+
+
+footer {
+  background-color: #F1F1F1;
+  border-top: 1px solid darkgray;
+  display: flex;
+  justify-content: space-around;
+}
+
+.list-inline {
+	margin-top: 15px;
+}
+
+.information {
+  text-align: left;
+  padding-left: 43px;
+  font-family: my-font;
+  margin-top: 17px;
+  font-size: 20px;
+  letter-spacing: 2px;
+}

@@ -1,41 +1,64 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-<link rel="stylesheet" type="text/css" href="css/style.css">
 <title>Worldtrek Travels</title>
 <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
-<header>
-
-</header>
-
-<div class="top-nav">
-  <a class="active" href="index.html">Home</a>
-  <div class="dropdown-menu"> 
-    <a class "destinations" href="destinations.html">Destinations</a>
-    <div class="dropdown-content">
-      <ul>
-      <h4>The Nordics</h4>
+<nav class="navbar navbar-default" style="background-color: #Ffd056";>
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navCollapse">
+<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true">
+</span>
+</button>
+  <a class="navbar-brand" href="index.html">WorldTrek Travels</a>
+    
+    <div class="collapse navbar-collapse" id="navCollapse">
+    
+    <ul class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="bookings.html">Bookings</a></li>
+  <li><a href="aboutus.html">About Us</a></li>
+  <li class="dropdown">
+  <a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+    Destinations
+    <b class="caret"></b>
+  </a>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+    <li><h4>The Nordics</h4></li>
     <li><a href="#">Sweden</a></li>
     <li><a href="#">Iceland</a></li>
     <li><a href="#">Norway</a></li>
-      <h4>North America</h4>
+        <li><h4>North America</h4></li>
     <li><a href="#">USA</a></li>
     <li><a href="#">Canada</a></li>
-      <h4>South Asia</h4>
+    <li><h4>South Asia</h4></li>
     <li><a href="#">India</a></li>
-      <h4>East Asia</h4>
+    <li><h4>East Asia</h4></li>
     <li><a href="#">Japan</a></li>
-      </ul>
-  </div>
+  </ul>
+</ul>
 </div>
-  <a href="bookings.html">Bookings</a>
-  <a href="aboutus.html">About us</a>
 </div>
+</div>
+  </nav>
+  
+  <div class="container-fluid">
+<div class="row">
+<div class="col-md-10">
+<div class="banner">
+<img class="img-fluid" src="img/header2.jpg" alt="WordTrek Travels">
+</div></div></div></div>
 
 <div class="row">
   <div class="column-one">
@@ -54,10 +77,13 @@
    </div>
 
 
+<div class="container-fluid">
+<div class="row">
+  <div class="col-md-12">
 <footer>
   <div class="information">Looking for inspiration?</div>
 
-  <ol>
+<ul class="list-inline">
     <li>
       <a href="instagram.com"><img src="img/instagram-symbol.png" alt="Follow us on Instagram!" style="width:42px;height:42px;">
     </a></li>
@@ -67,9 +93,9 @@
   <li>
     <a href="twitter.com"><img src="img/twitter-symbol.png" alt="Follow us on Twitter!" style="width:42px;height:42px;">
     </a></li>
-</ol>
+</ul>
 
-</footer>
+</footer></div></div></div>
 
 </body>
 
