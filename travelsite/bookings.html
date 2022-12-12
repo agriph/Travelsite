@@ -10,6 +10,9 @@
   <link rel="stylesheet" type="text/css" href="css.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 
 <body>
@@ -74,56 +77,35 @@
     
     </div></div>
 
-    <div class="booking-form">
+        <div id="myform-container"> 
 
-        <form action ="/action_page.php"></form>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname"><br><br>
-        <label for="email">E-mail:</label><br>
-        <input type="email" id="email" name="email"><br><br>
-        <label for="lname">Number:</label><br>
-        <input type="text" id="lname" name="lname"><br><br>
-        <label for="fname">Budget:</label><br>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="interest">I'd like to travel to (please choose min 1, max 4):</label><br>
-        <input class="single-checkbox"type="checkbox" name="country" value="Sweden">Sweden
-        <input class="single-checkbox" type="checkbox" name="country" value="Norway">Norway
-        <input class="single-checkbox" type="checkbox" name="country" value="Iceland">Iceland
-        <input class="single-checkbox" type="checkbox" name="country" value="Usa">Usa
-        <input class="single-checkbox" type="checkbox" name="country" value="Canada">Canada
-        <input class="single-checkbox" type="checkbox" name="country" value="India">India
-        <input class="single-checkbox" type="checkbox" name="country" value="Japan">Japan<br><br>
-        <label for="lname">Most interested in (please choose min 1, max 6):</label><br>
-        <input class="single-checkbox"type="checkbox" name="interest" value="Sightseeing">Sightseeing
-        <input class="single-checkbox"type="checkbox" name="interest" value="Hiking">Hiking
-        <input class="single-checkbox"type="checkbox" name="interest" value="Culture">Culture
-        <input class="single-checkbox"type="checkbox" name="interest" value="Bathing">Bathing
-        <input class="single-checkbox"type="checkbox" name="interest" value="Pools">Pools
-        <input class="single-checkbox"type="checkbox" name="interest" value="Skiing">Skiing
-        <input class="single-checkbox"type="checkbox" name="interest" value="Food">Food<br>
-        <input class="single-checkbox"type="checkbox" name="interest" value="Relaxation">Relaxation
-        <input class="single-checkbox"type="checkbox" name="interest" value="Car Rental">Car Rental
-        <input class="single-checkbox"type="checkbox" name="interest" value="Group Tours">Group Tours
-        <input class="single-checkbox"type="checkbox" name="interest" value="Guided Tours">Guided Tours
-        <input class="single-checkbox"type="checkbox" name="interest" value="Family Friendly">Family Friendly<br>
-        <input class="single-checkbox"type="checkbox" name="interest" value="Horseback Riding">Horseback Riding
-        <input class="single-checkbox"type="checkbox" name="interest" value="Wine Tasting">Wine Tasting
-        <input class="single-checkbox"type="checkbox" name="interest" value="Historical Places">Historical Places
-        <input class="single-checkbox"type="checkbox" name="interest" value="Shopping">Shopping<br><br>
-        <label for="text">Questions, needs, wishes or inquiries?</label><br>
-        <textarea id="message" name="message" cols="40" rows="5"></textarea><br><br>
-        <input type="submit" formaction="/action_page2.php" value="S U B M I T">
-        
-      </form>
+    <script type="text/babel">
+		function MyForm() {
+ 		 return (
+  	  <form>
+      <label>Your full name: 
+        <input type="text" />
+    	  </label>
+    	  
+    	  <label>Your mailadress: 
+        <input type="text" />
+    	  </label>
+    	  
+    	  <label>Country of Interest: 
+        <input type="text" />
+    	  </label>
+    	  
+    	  <input type="submit" />
+
+   	 </form>
+  	)
+	}
+	const root = ReactDOM.createRoot(document.getElementById('myform-container'));
+	root.render(<MyForm />);
+    </script>
 
     </div>
-
-    </div>
-
-</div>
-  </div>
+  
 
 
 <div class="container-fluid">
@@ -147,6 +129,9 @@
 </footer></div></div></div>
 
 <script src="script/slideshow.js"></script>
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
 </body>
 
