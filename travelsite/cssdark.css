@@ -12,26 +12,34 @@ html {
 }
 
 body {
-  background-color: #Ffffff;
+  background-color: #666666;
   min-height: 100%;
+}
+
+p {
+	color: white;
 }
 
 #wrapper {
   margin-left:auto;
   margin-right:auto;
   width:100%;
+  background-color: darkgrey;
 }
 
 .navbar-default { 
 margin : 0 !important; 
+background-color: darkgrey;
 }
 
 .navbar-header {
 	float: initial;
+	background-color: darkgrey;
 }
 
 .navbar-brand {
 	color: #ffffff !important;
+	background-color: darkgrey;
 }
 
 .banner  {
@@ -42,7 +50,7 @@ margin-left:-20px;
 }
 
 .dropdown-toggle {
-  background-color: #Ffd056;
+  background-color: #666666;
   	color: #ffffff !important;
 }
 
@@ -55,7 +63,7 @@ ul.dropdown-menu li a {
 }
 
 .dropdown-menu {
-	background: #Ffd056;
+	background: darkgrey;
 }
 
 
@@ -75,10 +83,11 @@ h3 {
   font-family: my-font;
   	font-size: 25px;
 	font-weight: bold;
+	color: white;
 }
 
 footer {
-  background-color: #F1F1F1;
+  background-color: darkgray;
   border-top: 1px solid darkgray;
   display: flex;
   justify-content: space-around;
@@ -113,8 +122,8 @@ button {
 }
 
 button:hover {
-  background-color: #Ffd056;
-  color: white;
+  background-color: #666666;
+  color: black;
 }
 
 #themeButton {

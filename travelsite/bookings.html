@@ -1,18 +1,11 @@
 ﻿<!DOCTYPE html>
 <html>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
 <title>Worldtrek Travels</title>
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 
 <body>
@@ -50,6 +43,7 @@
     <li><h4>East Asia</h4></li>
     <li><a href="#">Japan</a></li>
   </ul>
+    	<li><a href="indexdark.html"><img src="img/themeb.png"></a></li>
 </ul>
 </div>
 </div>
@@ -76,35 +70,33 @@
     <img class="img-responsive" src="img/yellow-snow.jpg" alt="Yellow">
     
     </div></div>
+			<div id="form">
+    	<form name="aForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+      <div id="fname">
+      <label for="fname">First name:</label><br>
+      <input id="fname" name="fname" type="text"><br><br>
+      </div>
+      <div id ="lname">
+      <label for="lname">Last name:</label><br>
+      <input id="lname" name="lname" type="text"><br><br>
+      </div>
+      <div id="email">
+      <label for="email">E-mail:</label><br>
+      <input id="email" name="email" type="email" ><br><br>
+      </div>
+      <div id="number">
+      <label for="number">Number:</label><br>
+      <input id="number" name="number" type="text"><br><br>
+      </div>
+      <div id="budget">
+      <label for="budget">Budget:</label><br>
+      <input id="budget" name="budget" type="text"><br><br><br>
+      </div>
+		<button type ="submit">Submit</button><br><br><br><br>
+    </form>
+		</div>
 
-        <div id="myform-container"> 
-
-    <script type="text/babel">
-		function MyForm() {
- 		 return (
-  	  <form>
-      <label>Your full name: 
-        <input type="text" />
-    	  </label>
-    	  
-    	  <label>Your mailadress: 
-        <input type="text" />
-    	  </label>
-    	  
-    	  <label>Country of Interest: 
-        <input type="text" />
-    	  </label>
-    	  
-    	  <input type="submit" />
-
-   	 </form>
-  	)
-	}
-	const root = ReactDOM.createRoot(document.getElementById('myform-container'));
-	root.render(<MyForm />);
-    </script>
-
-    </div>
+  </div>
   
 
 
@@ -127,12 +119,7 @@
 </ul>
 
 </footer></div></div></div>
-
-<script src="script/slideshow.js"></script>
-  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-
+<script src="myform.js"></script>
 </body>
 
 </html>
